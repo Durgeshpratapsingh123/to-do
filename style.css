@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(69deg,rgb(13, 118, 247),rgb(11, 219, 174));
+  color: #0d0c0c;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: rgb(128, 4, 251);
+  font-size: 5rem;
+  text-align: center;
+  opacity: 0.4;
+}
+
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 400px;
+}
+
+.input {
+  border: none;
+  color: #0f0f0f;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.input::placeholder {
+  color: #e0b4d6;
+}
+
+.input:focus {
+  outline-color: rgb(131, 39, 223);
+}
+
+.todos {
+  background-color: #ecec93;
+  padding: 0;
+  margin: 2rem;
+  list-style-type: none;
+  border-radius: 1rem;
+  /* overflow: auto; */
+  /* white-space: break-spaces; */
+  overflow-wrap: break-word;
+}
+
+.todos li {
+  border-top: 1px solid #a46565;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  
+}
+
+.todos li.completed {
+  color: #d01919;
+  text-decoration: line-through;
+}
+
+small {
+  color: #5e485a;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
